@@ -11,7 +11,7 @@ module.exports = {
   fn: async function () {
 
     // All done.
-    return "hello world";
+    return sails.config.custom;
 
   }
 

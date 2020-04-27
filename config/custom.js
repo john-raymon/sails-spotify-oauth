@@ -7,7 +7,7 @@
  * For more information on custom configuration, visit:
  * https://sailsjs.com/config/custom
  */
-
+require('dotenv').config();
 module.exports.custom = {
 
   /***************************************************************************
@@ -19,5 +19,7 @@ module.exports.custom = {
   // mailgunSecret: 'key-testkeyb183848139913858e8abd9a3',
   // stripeSecret: 'sk_test_Zzd814nldl91104qor5911gjald',
   // …
-
+  spotifyClientId: process.env.SPOTIFY_CLIENT_ID,
+  spotifyRedirectUri: 'http://localhost:1337/login/spotify-redirect',
+  spotifyClientSecret: process.env.SPOTIFY_CLIENT_SECRET,
 };
