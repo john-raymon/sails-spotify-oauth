@@ -18,8 +18,8 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-
-  '/': 'HomeController.index',
+  '/': { view: 'pages/homepage' },
+  '/login': 'UserController.login',
   '/login/spotify-redirect': 'UserController.create',
 
 

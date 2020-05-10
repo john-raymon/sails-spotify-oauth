@@ -1,8 +1,14 @@
 <div class="dreamineers__home-page">
   <h1>Dreamineers | Artist </h1>
+<% if (typeof error !== 'undefined') { %>
+  <p>
+    <%- error %>
+  </p>
+<% } %>
 
-  <a href="/login/spotify-redirect">
+  <a href="/login">
     Sign In with your Spotify Account
   </a>
   <p>You must first have a Spotify account to access the platform.</p>
 </div>
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
